@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "chronos_spitzhacke",
+        "model": {
+          "type": "minecraft:model",
+          "model": "powertools:item/chronos_spitzhacke"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/diamond_pickaxe"
+    }
+  }
+}

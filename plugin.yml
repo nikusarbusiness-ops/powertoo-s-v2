@@ -1,0 +1,37 @@
+name: PowerTools
+version: 1.0.0
+main: de.powertools.PowerTools
+api-version: '1.21'
+author: PowerTools
+description: Blitz Drill, Waldzorn-Axt, Chronos-Spitzhacke, Abgrund-Eimer, Midas-Axt und Orders
+softdepend: [Vault]
+
+commands:
+  powertools:
+    description: Admin-Befehl für PowerTools
+    usage: /powertools <give|reload>
+    aliases: [pt]
+    permission: powertools.admin
+  sell:
+    description: Items verkaufen
+    usage: /sell [hand]
+    permission: powertools.sell
+  order:
+    description: Kauf-Orders erstellen und verwalten
+    usage: /order <create|list|mine|cancel|collect>
+    aliases: [orders]
+    permission: powertools.order
+
+permissions:
+  powertools.admin:
+    description: Items geben und Config neu laden
+    default: op
+  powertools.sell:
+    description: /sell benutzen
+    default: true
+  powertools.order:
+    description: /order benutzen
+    default: true
+  powertools.sellaxe:
+    description: Midas-Axt benutzen
+    default: true
